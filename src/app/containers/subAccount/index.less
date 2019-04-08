@@ -1,0 +1,82 @@
+
+.addSubAccount {
+    .sub_item {
+        overflow: hidden;
+        width: 430px;
+        margin: 0 auto 24px;
+        > span {
+            float: left;
+            width: 100px;
+            line-height: 32px;
+            text-align: right;
+        }
+        .sub_input {
+            width: 328px;
+            float: left;
+        }
+        .sub_input2 {
+            width: 216px;
+            float: left;
+            margin-right: 8px;
+        }
+        .get_code {
+            width: 104px;
+            float: left;
+            height: 32px;
+            border: 1px solid #d9d9d9;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 30px;
+            box-sizing: border-box;
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.45);
+            cursor: pointer;
+            outline: none;
+            background: #fff!important;
+        }
+        .get_code.active {
+            border: 1px solid #1890FF;
+            color:rgba(24,144,255,1);
+        }
+        .other_do {
+            span {
+                color: #1890FF;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.checkChoose {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    .stopUse {
+        width: 350px;
+        height: 150px;
+        background: #fff;
+        border-radius: 2px;
+        padding-top: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        h3 {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        div {
+            text-align: center;
+        }
+    }
+}

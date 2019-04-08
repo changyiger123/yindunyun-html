@@ -1,0 +1,126 @@
+
+
+.cityChoose {
+    width: 375px;
+    height:32px;
+    background:rgba(255,255,255,1);
+    border-radius:4px;
+    border:1px solid rgba(0,0,0,0.15);
+    box-sizing: border-box;
+    margin-top: 4px;
+    position: relative;
+    font-size:14px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(0,0,0,0.65);
+    line-height: 30px;
+    text-indent: 12px;
+}
+.houseChoose{
+    width: 375px;
+    height:32px;
+    position: relative;
+    ul{
+        width: 100%;
+        max-height: 160px;
+        overflow: auto;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.15);
+        position: absolute;
+        top: 36px;
+        left: 0;
+        z-index: 1;
+        display: none;
+        li {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        li.noChooseLi{
+            color: #1890FF;
+            background:rgba(247,249,250,1);
+        }
+        .canChooseLi:hover{
+            background: #e6f7ff;
+            cursor: pointer;
+        }
+    }
+    ul.active {
+        display: block;
+    }
+}
+
+
+.cityListWarp {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    .cityListInner {
+        width:775px;
+        height:591px;
+        background:rgba(255,255,255,1);
+        border-radius:4px;
+        h3 {
+            height:64px;
+            background:rgba(249,250,250,1);
+            border-radius:4px 4px 0px 0px;
+            margin: 0;
+            font-size:20px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(0,0,0,0.85);
+            text-indent: 40px;
+            line-height: 64px;
+        }
+        ul {
+            width: 100%;
+            padding: 14px 40px;
+            margin-bottom: 18px;
+            box-sizing: border-box;
+            overflow: hidden;
+            li {
+                width: 50%;
+                float: left;
+                overflow: hidden;
+                > span {
+                    width: 26px;
+                    font-size:14px;
+                    font-family:PingFangSC-Regular;
+                    font-weight:400;
+                    color:rgba(24,144,255,1);
+                    float: left;
+                    line-height: 48px;
+                }
+                > div {
+                    width: 290px;
+                    height: 48px;
+                    border-bottom: 1px solid rgba(232,232,232,1);
+                    float: left;
+                    > div {
+                        padding: 2px 9px;
+                        margin-top: 10px;
+                        float: left;
+                        cursor: pointer;
+                        border-radius:2px;
+                        border:1px solid rgba(255,255,255,1);
+                    }
+                    > div.active {
+                        background:rgba(230,247,255,1);
+                        border:1px solid rgba(24,144,255,1);
+                    }
+                }
+            }
+        }
+    }
+}

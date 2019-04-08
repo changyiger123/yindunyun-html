@@ -1,0 +1,228 @@
+#mainContAccount {
+    position: relative;
+}
+.account_cash {
+    width: 63%;
+    height: 308px;
+    background: #fff;
+    float: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    .cash_content {
+        margin-top: 70px;
+        margin-left: 10%;
+        width: 250px;
+        text-align: center;
+        float: left;
+        > p {
+            font-size:16px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            line-height:22px;
+            margin: 0;
+        }
+        > div {
+            font-size:35px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(24,144,255,1);
+            line-height:49px;
+        }
+        > span {
+            display: block;
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.45);
+            line-height:22px;
+            > span {
+                color: #1890FF;
+            }
+        }
+    }
+    .cash_bg {
+        height: 102px;
+        width: 262px;
+        background: url(../../images/accountCenter/accountCenter.png) no-repeat center center;
+        background-size: contain;
+        float: right;
+        margin-top: 68px;
+        margin-right: 60px;
+    }
+}
+.user_question {
+    height: 308px;
+    background: #fff;
+    float: left;
+    .user_question_content {
+        padding: 24px 15px;
+        .oQuestion {
+            margin-bottom: 24px;
+            > div {
+                font-size:14px;
+                font-family:PingFangSC-Medium;
+                font-weight:bolder;
+                color:rgba(0,0,0,0.85);
+                margin-bottom: 8px;
+            }
+            > p {
+                font-size:14px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(0,0,0,0.65);
+                margin: 0;
+            }
+        }
+        
+    }
+}
+.account_content {
+    min-height: 350px;
+    background: #fff;
+    float: left;
+    margin: 24px;
+    .recharge {
+        text-align: center;
+        margin-top: 60px;
+        .recharge_option {
+            line-height: 32px;
+            width: 770px;
+            display: inline-block;
+            margin-bottom: 22px;
+            > span {
+                width: 70px;
+                font-size:14px;
+                font-family:PingFangSC-Regular;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                display: inline-block;
+                text-align: left;
+                vertical-align: top;
+            }
+            ._input {
+                width:330px;
+                height:32px;
+                display: inline-block;
+                background:rgba(255,255,255,1);
+                border-radius:4px;
+                border:1px solid rgba(0,0,0,0.15);
+                > input {
+                    border: none;
+                    width: 288px;
+                    height:28px;
+                    outline: none;
+                    margin-left: 10px;
+                }
+            }
+            .bill_box {
+                width:700px;
+                display: inline-block;
+                overflow: hidden;
+                > div {
+                    width: 200px;
+                    height: 56px;
+                    float: left;
+                    border:1px solid rgba(0,0,0,0.15);
+                    text-align: center;
+                    box-sizing: border-box;
+                    line-break: 54px;
+                    border-radius: 4px;
+                    margin: 5px;
+                    cursor: pointer;
+                    .real_cash {
+                        font-size:18px;
+                        font-family:PingFangSC-Semibold;
+                        font-weight:600;
+                        color:rgba(24,144,255,1);
+                        line-height:25px;
+                        display: inline-block;
+                        height: 25px;
+                        margin-top: 15px;
+                        label {
+                            font-size:12px;
+                            font-family:PingFangSC-Regular;
+                            font-weight:400;
+                        }
+                    }
+                    .free_cash {
+                        font-size:18px;
+                        font-family:PingFangSC-Semibold;
+                        font-weight:600;
+                        color:rgba(255,77,79,1);
+                        line-height:25px;
+                        display: inline-block;
+                        height: 25px;
+                        margin-top: 15px;
+                        margin-left: 8px;
+                        label {
+                            font-size:12px;
+                            font-family:PingFangSC-Regular;
+                            font-weight:400;
+                        }
+                    }
+                }
+                >div.active {
+                    background: #e6f7ff;
+                    border: 1px solid #1890ff;
+                }
+            }
+            .img_box {
+                height: 37px;
+                width:700px;
+                display: inline-block;
+                vertical-align: middle;
+                background: url(../../images//alipay.png) no-repeat left;
+                background-size: contain; 
+            }
+            .btn_box {
+                height: 32px;
+                width:700px;
+                text-align: left;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.account_option_title {
+    height: 55px;
+    border-bottom: 1px solid rgba(233,233,233,1);
+    font-size:16px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    text-indent: 24px;
+    color:rgba(0,0,0,0.85);
+    line-height:55px;
+}
+
+.rechargeRecord, .billManage{
+    .ant-form-item{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 16px;
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            width: 400px;
+            vertical-align: top;
+        }
+    }
+}
+
+.account_content .ant-table-content th, .account_content .ant-table-content td{
+    padding-left: 30px;
+}
+.responseBox{
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    background: #fff;
+    z-index: 2;
+}
+
+.dayDetailBox{
+    .ant-table-thead th, .ant-table-tbody td{
+        padding-left: 30px;
+    }
+}

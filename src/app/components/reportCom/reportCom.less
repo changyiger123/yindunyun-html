@@ -1,0 +1,1359 @@
+.hide{
+    display: none;
+}
+.show {
+    display: block;
+}
+.reportCommonWarp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    .bg_close {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .commonCloseBtn {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 1;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .commonInner {
+        width: 1017px;
+        height: 100%;
+        z-index: 1;
+        position: relative;
+        overflow: auto;
+        overflow-x: hidden;
+        .commonBody {
+            width: 1000px;
+            background: #f0f2f5;
+            .commonHeader {
+                position: relative;
+                img {
+                    width: 100%;
+                    display: block;
+                }
+                .commonTitle {
+                    font-size:40px;
+                    font-family:PingFangSC-Medium,Microsoft YaHei;
+                    font-weight:500;
+                    color:rgba(255,255,255,1);
+                    line-height:56px;
+                    position: absolute;
+                    top: 77px;
+                    left: 56px;
+                }
+                .carSelectTitle{
+                    position: relative;
+                    margin-bottom: 50px;
+                    width:542px;
+                    height: auto;
+                    padding:32px;
+                    left: 197px;
+                    top: -59px;
+                    background:rgba(255,255,255,1);
+                    border-radius:10px;
+                    display: flex;
+                    font-size: 14px;
+                    .carselectOptionTitle{
+                        width:110px;
+                        height: 100%;
+                        color: #000000;
+                    }
+                    .radioOption{
+                        display: block;
+                        flex: 1;
+                        color:rgba(0,0,0,0.65);
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+                
+            .commonContent {
+                position: relative;
+                .commonCard {
+                    background: url('../../images/report_card.png') no-repeat center center;
+                    background-size: contain;
+                    position: absolute;
+                    top: -50px;
+                    left: 155px;
+                    width: 670px;
+                    height: 243px;
+                }
+                .vinContent{
+                    margin:0 auto;
+                    margin-bottom: 50px;
+                    width:930px;
+                    background:rgba(240,242,245,1);
+                    height: auto;
+                    flex-wrap:wrap;
+                    display: flex;
+                    .vinItem{
+                        width:465px;
+                        height: auto;
+                        font-size: 14px;
+                        line-height: 49px;
+                        // float: left;
+                        // overflow: hidden;
+                        display: flex;
+                        .vinItemKey{
+                            width:202px;
+                            background:rgba(249,250,250,1);
+                            color:rgba(0,0,0,0.45);
+                            text-indent: 24px;
+                        }
+                        .vinItemVal{
+                            flex: 1;
+                            background:rgba(255,255,255,1);
+                            color:rgba(0,0,0,0.85);
+                            padding-left: 24px;
+                            word-break: break-all;
+                            white-space: pre-wrap;
+                        }
+                    }
+                    
+                }
+
+
+
+
+
+
+            }
+        }
+    }
+}
+
+.commonItem {
+    margin-bottom: 50px;
+}
+
+.tdType1 {
+    overflow: hidden;
+    .card_left {
+        float: left;
+        padding:  43px 0 0 60px;
+        .card_title {
+            font-size:20px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            line-height:28px;
+            margin-bottom: 10px;
+        }
+        .card_result_type1 {
+            font-size:30px;
+            font-family:PingFangSC-Medium,Microsoft YaHei;
+            font-weight:500;
+            color:rgba(24,144,255,1);
+            line-height:42px;
+            margin-bottom: 30px;
+        }
+        .card_result_type2 {
+            font-size:30px;
+            font-family:PingFangSC-Medium,Microsoft YaHei;
+            font-weight:500;
+            color:#FAAD14;
+            line-height:42px;
+            margin-bottom: 30px;
+        }
+        .card_result_type3 {
+            font-size:30px;
+            font-family:PingFangSC-Medium,Microsoft YaHei;
+            font-weight:500;
+            color:#F5222D;
+            line-height:42px;
+            margin-bottom: 30px;
+        }
+        .card_msg {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.5);
+            line-height:20px;
+            span {
+                font-size:14px;
+                font-family:PingFangSC-Medium,Microsoft YaHei;
+                font-weight:500;
+                color:rgba(76,76,76,1);
+                line-height:20px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .card_right {
+        float: right;
+        margin-right: 60px;
+        .card_score_type1 {
+            width: 146px;
+            height: 146px;
+            background: url('../../images/pass_pic.png') no-repeat;
+            background-size: contain; 
+            margin-top: 17px;
+            margin-bottom: 12px;
+            font-size:40px;
+            font-family:PingFangSC-Semibold,Microsoft YaHei;
+            font-weight:600;
+            color:rgba(24,144,255,1);
+            line-height:146px;
+            text-align: center;
+        }
+        .card_score_type2 {
+            width: 146px;
+            height: 146px;
+            background: url('../../images/recharge_pic.png') no-repeat;
+            background-size: contain; 
+            margin-top: 17px;
+            margin-bottom: 12px;
+            font-size:40px;
+            font-family:PingFangSC-Semibold,Microsoft YaHei;
+            font-weight:600;
+            color:#FAAD14;
+            line-height:146px;
+            text-align: center;
+        }
+        .card_score_type3 {
+            width: 146px;
+            height: 146px;
+            background: url('../../images/reject_pic.png') no-repeat;
+            background-size: contain; 
+            margin-top: 17px;
+            margin-bottom: 12px;
+            font-size:40px;
+            font-family:PingFangSC-Semibold,Microsoft YaHei;
+            font-weight:600;
+            color:#F5222D;
+            line-height:146px;
+            text-align: center;
+        }
+        .card_score_type4 {
+            width: 146px;
+            height: 146px;
+            background: url('../../images/report_success.png') no-repeat;
+            background-size: contain; 
+            margin-top: 35px;
+            margin-bottom: 12px;
+            font-size:40px;
+            font-family:PingFangSC-Semibold,Microsoft YaHei;
+            font-weight:600;
+            line-height:146px;
+            text-align: center;
+        }
+        p {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            line-height:20px;
+            width: 146px;
+            text-align: center;
+            .card_error_type1 {
+                color: #1890FF;
+                font-weight:500;
+            }
+            .card_error_type2 {
+                color: #FAAD14;
+                font-weight:500;
+            }
+            .card_error_type3 {
+                color: #F5222D;
+                font-weight:500;
+            }
+        }
+    }
+}
+
+.tdType2 {
+    .card_title {
+        margin-top: 60px;
+        font-size:20px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.85);
+        line-height:28px;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    .card_result {
+        font-size:30px;
+        font-family:PingFangSC-Medium,Microsoft YaHei;
+        font-weight:500;
+        color:rgba(24,144,255,1);
+        line-height:42px;
+        text-align: center;
+    }
+}
+
+
+.commonFiller {
+    height: 150px;
+}
+.commonMainType1 {
+    padding: 50px 35px;
+}
+.commonItem {
+    h3 {
+        font-size:20px;
+        font-family:PingFangSC-Medium,Microsoft YaHei;
+        font-weight:500;
+        color:rgba(23,63,101,1);
+        line-height:28px;
+        margin-bottom: 20px;
+        img {
+            margin-right: 8px;
+        }
+        label {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.65);
+            float: right;
+        }
+    }
+}
+.commonTable1 {
+    margin-bottom: 5px;
+    .commonTheader {
+        height: 50px;
+        overflow: hidden;
+        background: #f9fafa;
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        .commonTh {
+            width: 50%;
+            float: left;
+            padding: 15px 0;
+        }
+    }
+    .commonTbody {
+        .commonTr {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            overflow: hidden;
+            background: #fff;
+            .commonTd {
+                width: 50%;
+                float: left;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+
+.commonTable2 {
+    margin-bottom: 5px;
+    .commonTheader {
+        height: 50px;
+        overflow: hidden;
+        background: #f9fafa;
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        .commonTh1 {
+            width: 200px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh2 {
+            width: 365px;
+            float: left;
+            padding: 15px 0;
+        }
+    }
+    .commonTbody {
+        position: relative;
+        background: #fff;
+        .tbodyLeft {
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            border-right: 1px solid #ededed;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .tbodyRight {
+            width: 100%;
+            padding-left: 200px;
+            box-sizing: border-box;
+            .commonTr {
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: center;
+                overflow: hidden;
+                .commonTd {
+                    width: 50%;
+                    float: left;
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+}
+
+.commonTable3 {
+    margin-bottom: 5px;
+    position: relative;
+    .bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        .odd {
+            width: 200px;
+            height: 100%;
+            float: left;
+            background: #f9fafa;
+        }
+        .even {
+            width: 265px;
+            height: 100%;
+            float: left;
+            background: #fff;
+        }
+    }
+    .commonTbody {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .commonLists {
+            float: left;
+            overflow: hidden;
+            width: 50%;
+            .commonListName {
+                float: left;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.45);
+                padding: 15px 24px;box-sizing: border-box;
+                width: 200px;
+            }
+            .commonListMsg {
+                float: left;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                padding: 15px 24px;box-sizing: border-box;
+                width: 265px;
+                word-break: break-all;
+            }
+        }
+    }
+}
+
+.commonTable4 {
+    margin-bottom: 5px;
+    .commonTheader {
+        height: 50px;
+        overflow: hidden;
+        background: #f9fafa;
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        .commonTh1 {
+            width: 200px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh2 {
+            width: 260px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh3 {
+            width: 150px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh4 {
+            width: 160px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh5 {
+            width: 160px;
+            float: left;
+            padding: 15px 0;
+        }
+    }
+    .commonTbody {
+        position: relative;
+        background: #fff;
+        .tbodyLeft {
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            border-right: 1px solid #ededed;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .tbodyRight {
+            width: 100%;
+            padding-left: 200px;
+            box-sizing: border-box;
+            .commonTr {
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: center;
+                overflow: hidden;
+                .commonTd1 {
+                    width: 260px;
+                    float: left;
+                    padding: 15px 0;
+                }
+                .commonTd2 {
+                    width: 150px;
+                    float: left;
+                    padding: 15px 0;
+                }
+                .commonTd3 {
+                    width: 160px;
+                    float: left;
+                    padding: 15px 0;
+                }
+                .commonTd4 {
+                    width: 160px;
+                    float: left;
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+}
+
+.commonTable5 {
+    margin-bottom: 5px;
+    .commonTbody {
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        .commonListName {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.45);
+            padding: 15px 24px;box-sizing: border-box;
+            width: 200px;
+            background: #f9fafa;
+        }
+        .commonListMsg {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            padding: 15px 24px;box-sizing: border-box;
+            width: 730px;
+            background: #fff;
+            word-break: break-all;
+            position: absolute;
+            left: 200px;
+            top: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .commonTbody2 {
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        .commonListName {
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9fafa
+        }
+        .commonListMsg {
+            width: 100%;
+            height: 100%;
+            padding-left: 200px;
+            box-sizing: border-box;
+            background: #fff;
+            div{
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                padding: 15px 24px;box-sizing: border-box;
+            }
+        }
+    }
+}
+
+.commonTable6 {
+    margin-bottom: 5px;
+    .commonTheader {
+        height: 50px;
+        overflow: hidden;
+        background: #f9fafa;
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        .commonTh1 {
+            width: 200px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh2 {
+            width: 290px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh3 {
+            width: 200px;
+            float: left;
+            padding: 15px 0;
+        }
+        .commonTh4 {
+            width: 240px;
+            float: left;
+            padding: 15px 0;
+        }
+    }
+    .commonTbody {
+        position: relative;
+        background: #fff;
+        .tbodyLeft {
+            position: absolute;
+            width: 200px;
+            height: 100%;
+            border-right: 1px solid #ededed;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+        .tbodyRight {
+            width: 100%;
+            padding-left: 200px;
+            box-sizing: border-box;
+            .commonTr {
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: center;
+                overflow: hidden;
+                .commonTd1 {
+                    width: 290px;
+                    float: left;
+                    padding: 15px 0;
+                }
+                .commonTd2 {
+                    width: 200px;
+                    float: left;
+                    padding: 15px 0;
+                }
+                .commonTd3 {
+                    width: 240px;
+                    float: left;
+                    padding: 15px 0;
+                }
+            }
+        }
+    }
+}
+
+.commonTable7 {
+    margin-bottom: 5px;
+    .commonTheader {
+        height: 50px;
+        overflow: hidden;
+        background: #f9fafa;
+        text-align: center;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        .commonTh {
+            width: 33%;
+            float: left;
+            padding: 15px 0;
+        }
+    }
+    .commonTbody {
+        .commonTr {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            overflow: hidden;
+            background: #fff;
+            .commonTd {
+                width: 33%;
+                float: left;
+                padding: 15px 0;
+            }
+        }
+    }
+}
+.commonTable8 {
+    margin-bottom: 10px;
+    .commonTheader {
+        height: 50px;
+        background: #f9fafa;
+        text-align: left;
+        text-indent: 24px;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Medium,Microsoft YaHei;
+        font-weight:500;
+        color:rgba(23,63,101,1);
+        margin-bottom: 5px;
+        div {
+            float: left;
+            width: 258px;
+        }
+    }
+    .commonTbody {
+        overflow: hidden;
+        .commonTr {
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            position: relative;
+            background: #fff;
+            .commonListName {
+                position: absolute;
+                width: 138px;
+                height: 100%;
+                border-right: 1px solid #ededed;
+                display:flex;
+                justify-content:left;
+                align-items: center;
+                text-indent: 24px;
+                background: #f9fafa;
+            }
+            .commonListMsg {
+                width: 100%;
+                box-sizing: border-box;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: left;
+                word-break: break-all;
+                padding: 15px 24px 15px 162px;
+            }
+            .commonListName1 {
+                position: absolute;
+                width: 258px;
+                height: 100%;
+                border-right: 1px solid #ededed;
+                display:flex;
+                justify-content:left;
+                align-items: center;
+                text-indent: 24px;
+                background: #f9fafa;
+            }
+            .commonListMsg1 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: left;
+                word-break: break-all;
+                padding: 15px 24px 15px 282px;
+            }
+            .commonListName2 {
+                position: absolute;
+                width: 258px;
+                height: 100%;
+                border-right: 1px solid #ededed;
+                display:flex;
+                justify-content:left;
+                align-items: center;
+                text-indent: 24px;
+                background: #f9fafa;
+            }
+            .commonListMsg2 {
+                width: 100%;
+                box-sizing: border-box;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                text-align: left;
+                word-break: break-all;
+                padding: 0 0 0 258px;
+                .commonListMsg2_header {
+                    background: #f9fafa;
+                    height: 50px;
+                    line-height: 50px;
+                    color: rgba(0,0,0,0.45);
+                    .left {
+                        width: 50%;
+                        text-align: center;
+                        float: left;
+                    }
+                    .right {
+                        width: 50%;
+                        text-align: center;
+                        float: right;
+                    }
+                }
+                .commonListMsg2_list {
+                    background: #fff;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    .left {
+                        width: 50%;
+                        text-align: center;
+                        float: left;
+                    }
+                    .right {
+                        width: 50%;
+                        text-align: center;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .commonTr2 {
+            float: left;
+            width: 50%;
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: left;
+            background: #fff;
+            .commonListName {
+                width: 350px;
+                background: #f9fafa;
+                padding: 15px 15px 15px 24px;
+                float: left;
+                color:rgba(0,0,0,0.45);
+            }
+            .commonListMsg {
+                width: 115px;
+                box-sizing: border-box;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                float: right;
+                padding: 15px 15px 15px 24px;
+                overflow: hidden;
+            }
+            .commonListName1 {
+                width: 280px;
+                background: #f9fafa;
+                padding: 15px 24px 15px 24px;
+                float: left;
+                color:rgba(0,0,0,0.45);
+            }
+            .commonListMsg1 {
+                width: 185px;
+                box-sizing: border-box;
+                font-size:14px;
+                font-family:PingFangSC-Regular,Microsoft YaHei;
+                font-weight:400;
+                color:rgba(0,0,0,0.85);
+                float: right;
+                padding: 14px 15px 15px 24px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.commonTable9 {
+    margin-bottom: 10px;
+    .commonTheader {
+        height: 50px;
+        background: #f9fafa;
+        text-align: center;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        div{
+            float: left;
+            width: 50%;
+        }
+    }
+    .commonTheader2 {
+        height: 50px;
+        background: #f9fafa;
+        text-align: center;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        div{
+            float: left;
+            width: 20%;
+        }
+        div:nth-child(1) {
+            width: 30%;
+        }
+        div:nth-child(4) {
+            width: 15%;
+        }
+        div:nth-child(5) {
+            width: 15%;
+        }
+    }
+    .commonTheader3 {
+        height: 50px;
+        background: #f9fafa;
+        text-align: center;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        div:nth-child(1) {
+            width: 33%;
+            float: left;
+        }
+        div:nth-child(2) {
+            width: 33%;
+            float: left;
+        }
+        div:nth-child(3) {
+            width: 34%;
+            float: left;
+        }
+    }
+    .commonTheader4 {
+        height: 50px;
+        background: #f9fafa;
+        text-align: center;
+        text-indent: 24px;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        div:nth-child(1) {
+            width: 33%;
+            float: left;
+        }
+        div:nth-child(2) {
+            width: 67%;
+            float: left;
+        }
+    }
+    .commonTbody {
+        .commonTr {
+            overflow: hidden;
+            width: 100%;
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            background: #fff;
+            div {
+                width: 50%;
+                box-sizing: border-box;
+                float: left;
+                padding: 15px 24px 15px 24px;
+            }
+            div.noDate {
+                width: 100%;
+                padding: 15px 24px 15px 24px;
+            }
+        }
+        .commonTr2 {
+            overflow: hidden;
+            width: 100%;
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            background: #fff;
+            div {
+                width: 20%;
+                box-sizing: border-box;
+                float: left;
+                padding: 15px 24px 15px 24px;
+            }
+            div:nth-child(1) {
+                width: 30%;
+            }
+            div:nth-child(4) {
+                width: 15%;
+            }
+            div:nth-child(5) {
+                width: 15%;
+            }
+            div.noDate {
+                width: 100%;
+                padding: 15px 24px 15px 24px;
+            }
+        }
+        .commonTr3 {
+            overflow: hidden;
+            width: 100%;
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            background: #fff;
+            div {
+                width: 33%;
+                box-sizing: border-box;
+                float: left;
+                padding: 15px 24px 15px 24px;
+            }
+            div:nth-child(3) {
+                width: 34%;
+            }
+            div.noDate {
+                width: 100%;
+                padding: 15px 24px 15px 24px;
+            }
+        }
+    }
+}
+.commonTable10 {
+    margin-bottom: 10px;
+    .commonTheader {
+        height: 50px;
+        background: #f9fafa;
+        text-align: center;
+        line-height: 50px;
+        font-size:14px;
+        font-family:PingFangSC-Regular,Microsoft YaHei;
+        font-weight:400;
+        color:rgba(0,0,0,0.45);
+        div{
+            float: left;
+            width: 25%;
+        }
+    }
+    .commonTbody {
+        .commonTr {
+            overflow: hidden;
+            width: 100%;
+            font-size:14px;
+            font-family:PingFangSC-Regular,Microsoft YaHei;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+            background: #fff;
+            div {
+                width: 25%;
+                box-sizing: border-box;
+                float: left;
+                padding: 15px 24px 15px 24px;
+            }
+            div.noDate {
+                width: 100%;
+                padding: 15px 24px 15px 24px;
+            }
+        }
+    }
+}
+
+
+.more_msg {
+    font-size:14px;
+    font-family:PingFangSC-Regular,Microsoft YaHei;
+    font-weight:400;
+    color:rgba(24,144,255,1);
+    line-height:20px;
+    cursor: pointer;
+}
+
+
+
+.commonItem2 {
+    width: 930px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+.commonItem3 {
+    width: 930px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.commonChartsBox {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:stretch;
+    .commonChart {
+        width: 33%;
+        background: #fff;
+        border-radius: 2px;
+        .ranking_title{
+            height: 50px;
+            background: #f9fafa;
+            text-align: left;
+            line-height: 50px;
+            text-indent: 20px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(0, 0, 0,1);
+        }
+        .ranking_list {
+            padding: 20px;
+            box-sizing: border-box;
+            .ranking_item {
+                overflow: hidden;
+                margin-bottom: 14px;
+                .ranking_item_name {
+                    font-size:14px;
+                    font-family:PingFangSC-Regular;
+                    font-weight:400;
+                    color:rgba(0,0,0,0.85);
+                    width: 60px;
+                    float: left;
+                }
+                .ranking_item_bar {
+                    float: right;
+                    width: 190px;
+                    height: 8px;
+                    border-radius: 4px;
+                    background: #f0f2f5;
+                    margin-top: 6px;
+                    div {
+                        height: 100%;
+                        background: #1896ff;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .commonChart:last-child{
+        margin-right: 0;
+    }
+}
+.no_ranking_data_warp {
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    .no_ranking_data {
+        height: 130px;
+        width: 100%;
+        img {
+            width: 250px;
+            height: 100px;
+            display: block;
+            margin: 0 auto 8px;
+        }
+        div {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(163,177,191,1);
+            text-align: center;
+        }
+    }
+}
+
+
+.commonItem4 {
+    padding: 30px 0;
+    box-sizing: border-box;
+    width: 782px;
+    height: 118px;
+    background: #fff;
+    position: absolute;
+    top: -50px;
+    left: 109px;
+    box-shadow:0px 2px 30px 0px rgba(166,181,198,0.33);
+    border-radius:10px;
+    > div{
+        width: 260px;
+        height: 58px;
+        border-right: 1px solid rgba(232,232,232,1);
+        float: left;
+        > h3 {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.45);
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        > div {
+            font-size:18px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(0,0,0,0.85);
+            text-align: center;
+        }
+    }
+    >div:nth-child(3){
+        border: none;
+    }
+}
+
+.addressCard {
+    padding: 64px 98px 60px 60px;
+    box-sizing: border-box;
+    .addressCardLeft {
+        float: left;
+        h3 {
+            font-size:20px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            line-height:34px;
+            margin-bottom: 4px;
+        }
+        div {
+            font-size:30px;
+            font-family:PingFangSC-Medium;
+            font-weight:500;
+            color:rgba(24,144,255,1);
+        }
+        div.err{
+            color: #F5222D;
+        }
+    }
+    .addressCardRight {
+        width: 85px;
+        float: right;
+    }
+}
+
+.commonItem5 {
+    width:766px;
+    height:260px;
+    background:linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(238,244,250,1) 100%);
+    border-radius:10px;
+    box-shadow:0px 2px 30px 0px rgba(166,181,198,0.33);
+    background: #fff;
+    position: absolute;
+    top: -50px;
+    left: 109px;
+    padding: 44px 60px;
+    box-sizing: border-box;
+    .houseMsgLeft{
+        float: left;
+        margin-right: 33px;
+        > h3{
+            font-size:20px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(0,0,0,0.85);
+            margin-bottom: 30px;
+        }
+        > div{
+            overflow: hidden;
+            margin-bottom: 30px;
+            > div{
+                float: left;
+                margin-right: 57px;
+                >div{
+                    font-size:14px;
+                    font-family:PingFangSC-Regular;
+                    font-weight:400;
+                    color:rgba(136,137,137,1);
+                    margin-bottom: 4px;
+                }
+                > span {
+                    font-size:28px;
+                    font-family:PingFangSC-Medium;
+                    font-weight:500;
+                    color:rgba(24,144,255,1);
+                    display: block;
+                }
+            }
+        }
+        > p {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(136,137,137,1);
+        }
+    }
+    .houseMsgRight {
+        float: left;
+        height: 40px;
+        margin-top: 43px;
+        .toolsContent {
+            overflow: hidden;
+            margin-top: 30px;
+        }
+        .loanMin {
+            float: left;
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(37,37,37,1);
+            line-height: 40px;
+        }
+        .loanRange{
+            float: left;
+            width: 144px;
+        }
+        .loanMax {
+            float: left;
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(37,37,37,1);
+            line-height: 40px;
+        }
+        .toolsName {
+            font-size:14px;
+            font-family:PingFangSC-Regular;
+            font-weight:400;
+            color:rgba(136,137,137,1);
+            text-align: center;
+        }
+    }
+}
